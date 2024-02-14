@@ -20,6 +20,7 @@ module.exports = {
         border: 'var(--border)',
         input: 'var(--input)',
         ring: 'var(--ring)',
+        overlay: 'var(--overlay)',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         primary: {

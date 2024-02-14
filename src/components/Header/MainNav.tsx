@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-import { INavItem } from '@/types';
+import { NavItem } from '@/types';
 
 import { cn } from '@/lib/tailwind/utils';
 
 interface MainNavProps {
-  items?: INavItem[];
+  items?: NavItem[];
 }
 
 export const MainNav = ({ items }: MainNavProps) => {
@@ -19,8 +19,7 @@ export const MainNav = ({ items }: MainNavProps) => {
               href={item.href}
               className={cn(
                 'flex items-center text-md font-semibold text-foreground outline-none border-border',
-                'focus:border-b hover:border-b',
-                item.disabled && 'cursor-not-allowed opacity-80'
+                'focus:border-b hover:border-b'
               )}
             >
               {item.title}

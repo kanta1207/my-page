@@ -1,4 +1,4 @@
-export interface INavItem {
+export interface NavItem {
   title: string;
   href?: string;
   disabled?: boolean;
