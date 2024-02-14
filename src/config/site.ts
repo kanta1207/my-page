@@ -1,18 +1,28 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: 'Next.js',
-  description:
-    'Beautifully designed components built with Radix UI and Tailwind CSS.',
+  name: 'Kanta Sakai',
+  description: 'aaa.',
   mainNav: [
     {
       title: 'Home',
       href: '/',
     },
+    {
+      title: 'Experience',
+      href: '/experience',
+    },
+    {
+      title: 'Projects',
+      href: '/projects',
+    },
+    {
+      title: 'Blog',
+      href: '/blog',
+    },
   ],
   links: {
-    twitter: 'https://twitter.com/shadcn',
-    github: 'https://github.com/shadcn/ui',
-    docs: 'https://ui.shadcn.com',
+    linkedIn: 'https://www.linkedin.com/in/kanta-sakai/',
+    github: 'https://github.com/kanta1207',
   },
 };

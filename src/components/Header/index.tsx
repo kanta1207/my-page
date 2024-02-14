@@ -8,44 +8,38 @@ import { ThemeToggleButton } from './ThemeToggleButton';
 
 export const Header = () => {
   return (
-    <header className="bg-background sticky top-0 z-40 w-full border-b">
-      <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+    <header className="bg-background sticky top-0 z-40 w-full h-16">
+      <div className="">
         <MainNav items={siteConfig.mainNav} />
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <nav className="flex items-center space-x-1">
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
+        <nav className="flex items-center space-x-1">
+          <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
+            <div
+              className={buttonVariants({
+                size: 'icon',
+                variant: 'ghost',
+              })}
             >
-              <div
-                className={buttonVariants({
-                  size: 'icon',
-                  variant: 'ghost',
-                })}
-              >
-                <Icon.gitHub className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </div>
-            </Link>
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
+              <Icon.gitHub className="h-6 w-6" />
+              <span className="sr-only">GitHub</span>
+            </div>
+          </Link>
+          <Link
+            href={siteConfig.links.linkedIn}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div
+              className={buttonVariants({
+                size: 'icon',
+                variant: 'ghost',
+              })}
             >
-              <div
-                className={buttonVariants({
-                  size: 'icon',
-                  variant: 'ghost',
-                })}
-              >
-                {/* <Icon.twitter className="h-5 w-5 fill-current" /> */}
-                {/* <span className="sr-only">Twitter</span> */}
-              </div>
-            </Link>
-            <ThemeToggleButton />
-          </nav>
-        </div>
+              <Icon.linkedIn className="h-6 w-6" />
+              <span className="sr-only">LinkedIn</span>
+            </div>
+          </Link>
+          <ThemeToggleButton />
+        </nav>
       </div>
     </header>
   );
